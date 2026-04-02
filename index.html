@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carve &amp; Curve — The Architectural Acoustic Standard</title>
+  <meta name="description" content="Handcrafted acoustic panels from Chennai. Where architecture meets acoustics. Wall panels, cloud systems, corner traps and bespoke solutions.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+╔══════════════════════════════════════════════════════════════════╗
+║           IMAGE FILE GUIDE — WHERE TO SAVE YOUR PHOTOS           ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  Save all images inside a folder called  /assets/               ║
+║  (create it in the same folder as index.html)                   ║
+║                                                                  ║
+║  SECTION          FILE NAME                       DESCRIPTION    ║
+║  ─────────────────────────────────────────────────────────────  ║
+║  Hero             assets/cover-hero.jpg           Cover hero     ║
+║                                                   Full-height.   ║
+║                                                   Suggested:     ║
+║                                                   Studio or      ║
+║                                                   panel close-up ║
+║                                                                  ║
+║  Intro            assets/luxury-studio-interior.jpg              ║
+║                                                   Elegant studio ║
+║                                                   or treated     ║
+║                                                   listening room ║
+║                                                                  ║
+║  Philosophy       assets/story-workshop-process.jpg              ║
+║  (strip left)                                     Craftsman at   ║
+║                                                   work, panel    ║
+║                                                   being built    ║
+║                                                                  ║
+║  Philosophy       assets/story-material-closeup.jpg              ║
+║  (strip centre)                                   Fabric texture,║
+║                                                   Pine wood      ║
+║                                                   grain detail   ║
+║                                                                  ║
+║  Philosophy       assets/story-installed-environment.jpg         ║
+║  (strip right)                                    Finished panel ║
+║                                                   installation   ║
+║                                                                  ║
+║  Challenge        assets/problem-untreated-room.jpg              ║
+║                                                   Untreated room ║
+║                                                   or wide shot   ║
+║                                                                  ║
+║  Solution         assets/solution-panel-core-detail.jpg          ║
+║                                                   Panel cut-away ║
+║                                                   or core detail ║
+║                                                                  ║
+║  Editions         assets/edition-core-product.jpg                ║
+║  Core card                                        Frameless      ║
+║                                                   single-tone    ║
+║                                                   panel shot     ║
+║                                                                  ║
+║  Editions         assets/edition-artisan-product.jpg             ║
+║  Artisan card                                     Pine-framed    ║
+║                                                   panel, warm    ║
+║                                                   studio context ║
+║                                                                  ║
+║  Editions         assets/edition-signature-product.jpg           ║
+║  Signature card                                   Dual-tone      ║
+║                                                   flagship panel ║
+║                                                                  ║
+║  Systems          assets/system-wall-panel-installed.jpg         ║
+║  Wall panel                                       Panel on wall, ║
+║                                                   side angle     ║
+║                                                                  ║
+║  Systems          assets/system-cloud-panel-ceiling.jpg          ║
+║  Cloud panel                                      Suspended      ║
+║                                                   ceiling cloud, ║
+║                                                   LED glow ideal ║
+║                                                                  ║
+║  Corner traps     assets/system-corner-trap-installed.jpg        ║
+║                                                   Full-height    ║
+║                                                   bass trap in   ║
+║                                                   room corner    ║
+║                                                                  ║
+║  Suite            assets/suite-full-studio-wideshot.jpg          ║
+║                                                   Wide studio    ║
+║                                                   showing all    ║
+║                                                   three systems  ║
+║                                                                  ║
+║  Bespoke main     assets/bespoke-custom-install-main.jpg         ║
+║                                                   Custom install ║
+║                                                   wide angle     ║
+║                                                                  ║
+║  Bespoke left     assets/bespoke-detail-fabric.jpg               ║
+║                                                   Fabric swatch  ║
+║                                                   or material    ║
+║                                                   close-up       ║
+║                                                                  ║
+║  Bespoke right    assets/bespoke-detail-craftsmanship.jpg        ║
+║                                                   Pine edge or   ║
+║                                                   joinery detail ║
+║                                                                  ║
+║  RECOMMENDED FORMAT : JPG or WebP                                ║
+║  RECOMMENDED SIZE   : 1600px on the longest side, max 400 KB     ║
+╚══════════════════════════════════════════════════════════════════╝
+-->
+
+<!-- ── Custom cursor dots (hidden on touch devices via CSS) ── -->
+<div id="cur"      aria-hidden="true"></div>
+<div id="cur-ring" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════
+     NAV
+════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">Carve <em>&amp; Curve</em></a>
+
+  <div class="nav-links">
+    <a href="#intro">About</a>
+    <a href="#editions">Collections</a>
+    <a href="#systems">Systems</a>
+    <a href="#bespoke">Bespoke</a>
+    <a href="#contact" class="nav-btn">Get a Quote</a>
+  </div>
+
+  <button class="hamburger" id="ham" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile overlay menu -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#intro"    class="mob-nav">About</a>
+  <a href="#editions" class="mob-nav">Collections</a>
+  <a href="#systems"  class="mob-nav">Systems</a>
+  <a href="#bespoke"  class="mob-nav">Bespoke</a>
+  <a href="#contact"  class="mob-cta">Get a Quote</a>
+</div>
+
+<!-- ════════════════════════════════════
+     1 · HERO
+════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+
+  <div class="hero-left">
+    <div class="hero-arc" aria-hidden="true"></div>
+    <p class="hero-eyebrow">The Architectural Acoustic Standard</p>
+    <h1 class="hero-h1">Carve<br>&amp;<br><em>Curve</em></h1>
+    <p class="hero-tagline">Where architecture meets acoustics. Where silence becomes the ultimate luxury. Handcrafted acoustic panels from Chennai.</p>
+    <div class="hero-ctas">
+      <a href="#editions" class="btn-fill">
+        Explore Collections
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#contact" class="btn-line">
+        Get a Quote
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-n">3</div><div class="stat-l">Editions</div></div>
+      <div><div class="stat-n">3</div><div class="stat-l">Systems</div></div>
+      <div><div class="stat-n">∞</div><div class="stat-l">Bespoke Options</div></div>
+    </div>
+  </div>
+
+  <!-- ▶ IMAGE: assets/cover-hero.jpg -->
+  <div class="hero-right">
+    <img src="assets/cover-hero.jpg" alt="Carve and Curve — luxury acoustic panel installation" loading="eager">
+    <div class="ph" aria-hidden="true">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>Save as: assets/cover-hero.jpg</span>
+    </div>
+    <div class="hero-gold-line" aria-hidden="true"></div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     MARQUEE STRIP
+════════════════════════════════════ -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-track">
+    <span class="mq-item">The Architectural Acoustic Standard<span class="mq-dot"></span></span>
+    <span class="mq-item">Wall Panels<span class="mq-dot"></span></span>
+    <span class="mq-item">Cloud Systems<span class="mq-dot"></span></span>
+    <span class="mq-item">Corner Bass Traps<span class="mq-dot"></span></span>
+    <span class="mq-item">Signature Suite<span class="mq-dot"></span></span>
+    <span class="mq-item">Bespoke Acoustic Design<span class="mq-dot"></span></span>
+    <span class="mq-item">High-Density Mineral Core<span class="mq-dot"></span></span>
+    <span class="mq-item">Handcrafted in Chennai<span class="mq-dot"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="mq-item">The Architectural Acoustic Standard<span class="mq-dot"></span></span>
+    <span class="mq-item">Wall Panels<span class="mq-dot"></span></span>
+    <span class="mq-item">Cloud Systems<span class="mq-dot"></span></span>
+    <span class="mq-item">Corner Bass Traps<span class="mq-dot"></span></span>
+    <span class="mq-item">Signature Suite<span class="mq-dot"></span></span>
+    <span class="mq-item">Bespoke Acoustic Design<span class="mq-dot"></span></span>
+    <span class="mq-item">High-Density Mineral Core<span class="mq-dot"></span></span>
+    <span class="mq-item">Handcrafted in Chennai<span class="mq-dot"></span></span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     2 · INTRO — The Silence of Luxury
+════════════════════════════════════ -->
+<section id="intro" aria-label="The Silence of Luxury">
+
+  <div class="intro-text rw">
+    <div class="tag">01 — The Silence of Luxury</div>
+    <h2 class="s-h2">A Space is Only as Good<br>as it <em>Sounds</em></h2>
+    <p class="lead">Sound defines experience. It shapes how we feel, how we focus, and how we connect.</p>
+    <p>In a world driven by visuals, true luxury lies in what you don't hear — the absence of echo, distortion, and chaos.</p>
+    <p>A well-designed acoustic environment is not just quiet. It is balanced, controlled, and immersive.</p>
+    <p class="kicker">This is the silence of luxury.</p>
+  </div>
+
+  <div class="intro-right rw rw-d2">
+    <!-- ▶ IMAGE: assets/luxury-studio-interior.jpg -->
+    <div class="intro-img img-zone">
+      <img src="assets/luxury-studio-interior.jpg" alt="Luxury acoustic studio interior" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Save as: assets/luxury-studio-interior.jpg</span>
+      </div>
+    </div>
+    <div class="intro-quote-bar">
+      <p>What you hear is not just sound — it is the quality of the space that contains it.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     3 · PHILOSOPHY
+════════════════════════════════════ -->
+<section id="philosophy" aria-label="Our Philosophy">
+
+  <div class="phil-top">
+    <div class="rw">
+      <div class="tag">02 — Our Philosophy</div>
+      <h2 class="s-h2">Clarity by <em>Design.</em><br>Quality by Craft.</h2>
+    </div>
+    <div class="rw rw-d2">
+      <p>Rooted in Chennai, Carve and Curve is built on a philosophy where architecture meets acoustics. Every panel is crafted — not manufactured — to deliver consistent performance and timeless design.</p>
+      <p>We don't just treat sound. We shape it.</p>
+    </div>
+  </div>
+
+  <!-- Three-image strip -->
+  <div class="phil-strip rw">
+
+    <!-- ▶ IMAGE: assets/story-workshop-process.jpg -->
+    <div class="strip-cell img-zone">
+      <img src="assets/story-workshop-process.jpg" alt="Workshop and crafting process" loading="lazy">
+      <div class="ph" aria-hidden="true"><span>assets/story-workshop-process.jpg</span></div>
+      <div class="strip-cap"><span>Workshop</span></div>
+    </div>
+
+    <!-- ▶ IMAGE: assets/story-material-closeup.jpg -->
+    <div class="strip-cell img-zone">
+      <img src="assets/story-material-closeup.jpg" alt="Acoustic panel material close-up" loading="lazy">
+      <div class="ph" aria-hidden="true"><span>assets/story-material-closeup.jpg</span></div>
+      <div class="strip-cap"><span>Material Detail</span></div>
+    </div>
+
+    <!-- ▶ IMAGE: assets/story-installed-environment.jpg -->
+    <div class="strip-cell img-zone">
+      <img src="assets/story-installed-environment.jpg" alt="Acoustic panels installed in environment" loading="lazy">
+      <div class="ph" aria-hidden="true"><span>assets/story-installed-environment.jpg</span></div>
+      <div class="strip-cap"><span>Installed</span></div>
+    </div>
+
+  </div>
+
+  <div class="phil-pillars rw rw-d1">
+    <div class="pillar">
+      <div class="pl">I. Artisanal Woodworking</div>
+      <p>Handcrafted Pine frames with structural integrity built into every joint and edge.</p>
+    </div>
+    <div class="pillar">
+      <div class="pl">II. Precision Engineering</div>
+      <p>Dimensionally calibrated cores that target specific frequency bands with clinical accuracy.</p>
+    </div>
+    <div class="pillar">
+      <div class="pl">III. Acoustic Calibration</div>
+      <p>Mineral cores delivering superior broadband absorption and long-term structural integrity.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     4 · THE CHALLENGE
+════════════════════════════════════ -->
+<section id="challenge" aria-label="The Challenge">
+
+  <div class="challenge-text rw">
+    <div class="tag">03 — The Challenge</div>
+    <h2 class="s-h2">The <em>Hidden Noise</em><br>in Every Room</h2>
+    <div class="problem-cards">
+      <div class="p-card">
+        <h3>Slap-back Echo</h3>
+        <p>Rapid reflections between parallel surfaces collapse stereo imaging and smear transient detail.</p>
+        <span class="cn" aria-hidden="true">01</span>
+      </div>
+      <div class="p-card">
+        <h3>Bass Mud</h3>
+        <p>Low-frequency energy accumulates in corners, creating boomy, inaccurate low-end response.</p>
+        <span class="cn" aria-hidden="true">02</span>
+      </div>
+      <div class="p-card">
+        <h3>Flutter Echo</h3>
+        <p>Metallic ringing from flat, untreated walls allowing mid-range energy to bounce uncontrolled.</p>
+        <span class="cn" aria-hidden="true">03</span>
+      </div>
+    </div>
+    <div class="challenge-quote">
+      <p>What you hear is not the source — it's the room interfering.</p>
+    </div>
+  </div>
+
+  <div class="challenge-right rw rw-d2">
+    <!-- ▶ IMAGE: assets/problem-untreated-room.jpg -->
+    <div class="challenge-img img-zone">
+      <img src="assets/problem-untreated-room.jpg" alt="Untreated room showing acoustic issues" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Save as: assets/problem-untreated-room.jpg</span>
+      </div>
+    </div>
+    <div class="challenge-caption">
+      <div class="cap-k">Room Acoustic Anatomy</div>
+      <p>Parallel surfaces, corner buildup, flutter echo paths — all visible in an untreated space.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     5 · SOLUTION
+════════════════════════════════════ -->
+<section id="solution" aria-label="The Solution">
+
+  <div class="solution-upper">
+    <div class="solution-text rw">
+      <div class="tag">04 — The Architecture of Clarity</div>
+      <h2 class="s-h2">Beyond the <em>Foam.</em></h2>
+      <p>Standard acoustic foam treats only surface-level reflections. Our system goes deeper. Using high-density Rockwool cores, we deliver superior broadband absorption, controlled frequency response, and long-term structural integrity.</p>
+      <p>This is not just absorption — it's precision acoustic engineering.</p>
+    </div>
+
+    <!-- ▶ IMAGE: assets/solution-panel-core-detail.jpg -->
+    <div class="solution-img img-zone rw rw-d2">
+      <img src="assets/solution-panel-core-detail.jpg" alt="Panel core cross-section detail" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Save as: assets/solution-panel-core-detail.jpg</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="solution-benefits">
+    <div class="benefit-card rw rw-d1">
+      <h4>Broadband Absorption</h4>
+      <p>Targets the full spectrum from low-mid mud to high-frequency flutter.</p>
+    </div>
+    <div class="benefit-card rw rw-d2">
+      <h4>Controlled Decay</h4>
+      <p>Precise RT60 management for accurate monitoring and critical listening.</p>
+    </div>
+    <div class="benefit-card rw rw-d3">
+      <h4>Structural Integrity</h4>
+      <p>Rigid internal chassis prevents warping, maintaining flush alignment for decades.</p>
+    </div>
+    <div class="benefit-card rw rw-d4">
+      <h4>Architectural Finish</h4>
+      <p>Premium fabric and Pine framing transform treatment into interior design.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     6 · EDITIONS
+════════════════════════════════════ -->
+<section id="editions" aria-label="The Collections">
+
+  <div class="editions-header rw">
+    <div class="tag">05 — The Collections</div>
+    <h2 class="s-h2">Acoustic Accuracy.<br><em>Architectural Art.</em></h2>
+    <p>From seamless minimalism to bespoke elegance — each edition is a commitment to Absolute Sound. Absolute Design.</p>
+  </div>
+
+  <div class="editions-grid">
+
+    <!-- CORE EDITION -->
+    <div class="edition-card rw rw-d1">
+      <!-- ▶ IMAGE: assets/edition-core-product.jpg -->
+      <div class="ed-img img-zone">
+        <img src="assets/edition-core-product.jpg" alt="Core Edition acoustic panel" loading="lazy">
+        <div class="ph" aria-hidden="true"><span>assets/edition-core-product.jpg</span></div>
+        <span class="ed-badge badge-dark">Core Edition</span>
+      </div>
+      <div class="ed-body">
+        <div class="ed-num">01 — Edition</div>
+        <div class="ed-name">Pure Sonic <em>Transparency</em></div>
+        <div class="ed-tagline">The Minimalist Standard</div>
+        <div class="ed-div"></div>
+        <div class="ed-row"><span class="ed-k">Design</span><span class="ed-v">Frameless · Single-tone fabric</span></div>
+        <div class="ed-row"><span class="ed-k">Best For</span><span class="ed-v">Home offices · Podcast studios · Content creators</span></div>
+        <div class="ed-row"><span class="ed-k">Depth</span><span class="ed-v">2" · 3" · 4"</span></div>
+        <div class="ed-row"><span class="ed-k">Size</span><span class="ed-v">2 ft × 4 ft standard</span></div>
+        <a href="#contact" class="ed-cta">Enquire Now <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- ARTISAN EDITION -->
+    <div class="edition-card rw rw-d2">
+      <!-- ▶ IMAGE: assets/edition-artisan-product.jpg -->
+      <div class="ed-img img-zone">
+        <img src="assets/edition-artisan-product.jpg" alt="Artisan Edition acoustic panel with Pine frame" loading="lazy">
+        <div class="ph" aria-hidden="true"><span>assets/edition-artisan-product.jpg</span></div>
+        <span class="ed-badge badge-dark">Artisan Edition</span>
+      </div>
+      <div class="ed-body">
+        <div class="ed-num">02 — Edition</div>
+        <div class="ed-name">The Warmth of <em>Precision</em></div>
+        <div class="ed-tagline">Natural Pine &amp; Premium Fabric</div>
+        <div class="ed-div"></div>
+        <div class="ed-row"><span class="ed-k">Design</span><span class="ed-v">Pinewood frame · Single-tone fabric</span></div>
+        <div class="ed-row"><span class="ed-k">Best For</span><span class="ed-v">Professional studios · Home cinemas</span></div>
+        <div class="ed-row"><span class="ed-k">Depth</span><span class="ed-v">3" · 4" · 5"</span></div>
+        <div class="ed-row"><span class="ed-k">Size</span><span class="ed-v">2 ft × 4 ft · 4 ft × 6 ft</span></div>
+        <a href="#contact" class="ed-cta">Enquire Now <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- SIGNATURE EDITION -->
+    <div class="edition-card rw rw-d3">
+      <!-- ▶ IMAGE: assets/edition-signature-product.jpg -->
+      <div class="ed-img img-zone">
+        <img src="assets/edition-signature-product.jpg" alt="Signature Edition dual-tone acoustic panel" loading="lazy">
+        <div class="ph" aria-hidden="true"><span>assets/edition-signature-product.jpg</span></div>
+        <span class="ed-badge badge-gold">Signature Edition</span>
+      </div>
+      <div class="ed-body">
+        <div class="ed-num">03 — Edition</div>
+        <div class="ed-name">Absolute Acoustic <em>Calibration</em></div>
+        <div class="ed-tagline">The Dual-Tone Elite</div>
+        <div class="ed-div"></div>
+        <div class="ed-row"><span class="ed-k">Design</span><span class="ed-v">Pinewood frame · Dual-tone fabric</span></div>
+        <div class="ed-row"><span class="ed-k">Best For</span><span class="ed-v">Flagship studios · Luxury cinemas · Executive spaces</span></div>
+        <div class="ed-row"><span class="ed-k">Depth</span><span class="ed-v">4" · 5" · 6"</span></div>
+        <div class="ed-row"><span class="ed-k">Size</span><span class="ed-v">Custom · up to 4 ft × 6 ft</span></div>
+        <a href="#contact" class="ed-cta">Enquire Now <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     7 · SURFACE SYSTEMS
+════════════════════════════════════ -->
+<section id="systems" aria-label="Surface Systems">
+
+  <div class="systems-head">
+    <div class="rw">
+      <div class="tag tag-light">06 — Surface Systems</div>
+      <h2 class="s-h2 s-h2-light">Three <em>Systems.</em><br>Total Control.</h2>
+    </div>
+    <div class="rw rw-d2">
+      <p>A fully integrated acoustic ecosystem. Every surface treated. Every frequency controlled. Every environment transformed.</p>
+    </div>
+  </div>
+
+  <!-- WALL PANELS -->
+  <div class="sys-block rw">
+    <div class="sys-text">
+      <div class="tag">01 — Wall Surface Systems</div>
+      <h3 class="sys-h3">Lateral Surface <em>Panels</em></h3>
+      <p>Parallel vertical surfaces are the primary cause of acoustic smearing. Our systems intercept these reflections before they degrade the soundstage — transforming chaotic rooms into calibrated environments.</p>
+      <div class="pills">
+        <span class="pill">Mechanical Integrity</span>
+        <span class="pill">Frequency Calibration</span>
+        <span class="pill">All Three Editions</span>
+      </div>
+      <div class="t-matrix">
+        <h5>Technical Matrix</h5>
+        <div class="t-row"><span class="tk">Widths</span><span class="tv">2 ft &nbsp;|&nbsp; 3 ft</span></div>
+        <div class="t-row"><span class="tk">Heights</span><span class="tv">4 ft &nbsp;|&nbsp; 5 ft &nbsp;|&nbsp; 6 ft</span></div>
+        <div class="t-row"><span class="tk">Depth</span><span class="tv">2" &nbsp;|&nbsp; 3" &nbsp;|&nbsp; 4" &nbsp;|&nbsp; 5"</span></div>
+        <div class="t-row"><span class="tk">Editions</span><span class="tv">Core · Artisan · Signature</span></div>
+      </div>
+    </div>
+    <!-- ▶ IMAGE: assets/system-wall-panel-installed.jpg -->
+    <div class="sys-img-zone img-zone">
+      <img src="assets/system-wall-panel-installed.jpg" alt="Wall acoustic panel installed in studio" loading="lazy">
+      <div class="ph" aria-hidden="true"><span>assets/system-wall-panel-installed.jpg</span></div>
+    </div>
+  </div>
+
+  <!-- CLOUD SYSTEMS -->
+  <div class="sys-block rw">
+    <div class="sys-text sys-warm">
+      <div class="tag">02 — Cloud / Ceiling Systems</div>
+      <h3 class="sys-h3">Cloud Surface <em>Systems</em></h3>
+      <p>The ceiling is the largest reflective surface in any room. Our Cloud Systems neutralize vertical standing waves and improve vocal clarity via the Acoustic Air-Gap principle — absorbing sound twice for maximum efficiency.</p>
+      <div class="pills">
+        <span class="pill">Air-Gap Principle</span>
+        <span class="pill">+30% LF Absorption</span>
+        <span class="pill">Integrated LED</span>
+      </div>
+      <div class="t-matrix">
+        <h5>Technical Matrix</h5>
+        <div class="t-row"><span class="tk">Widths</span><span class="tv">2 ft &nbsp;|&nbsp; 3 ft</span></div>
+        <div class="t-row"><span class="tk">Spans</span><span class="tv">4 ft &nbsp;|&nbsp; 5 ft &nbsp;|&nbsp; 6 ft</span></div>
+        <div class="t-row"><span class="tk">Depth</span><span class="tv">2" &nbsp;|&nbsp; 3" &nbsp;|&nbsp; 4" &nbsp;|&nbsp; 5"</span></div>
+        <div class="t-row"><span class="tk">LED</span><span class="tv">Integrated Available</span></div>
+      </div>
+    </div>
+    <!-- ▶ IMAGE: assets/system-cloud-panel-ceiling.jpg -->
+    <div class="sys-img-zone img-zone">
+      <img src="assets/system-cloud-panel-ceiling.jpg" alt="Cloud acoustic panel suspended from ceiling" loading="lazy">
+      <div class="ph" aria-hidden="true"><span>assets/system-cloud-panel-ceiling.jpg</span></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     8 · CORNER TRAPS + SIGNATURE SUITE
+════════════════════════════════════ -->
+<section id="corner" aria-label="Corner Systems and Signature Suite">
+
+  <!-- Corner Bass Traps -->
+  <div class="corner-block rw">
+    <div class="corner-text">
+      <div class="tag tag-light">03 — Corner Systems</div>
+      <h2 class="s-h2 s-h2-light">Corner Bass <em>Traps</em></h2>
+      <p style="font-size:15px;font-weight:300;line-height:1.9;color:var(--cream-dim);margin:16px 0 22px;">Low-frequency energy is non-directional and accumulates in corners. Our Corner Systems are high-mass acoustic solutions designed to anchor the room's low-end response between 60 Hz and 250 Hz.</p>
+      <div class="pills">
+        <span class="pill">High-Mass Core</span>
+        <span class="pill">60–250 Hz Target</span>
+        <span class="pill">Signature Fabric</span>
+      </div>
+      <div class="t-matrix" style="margin-top:20px">
+        <h5>Technical Specifications</h5>
+        <div class="t-row"><span class="tk">Width</span><span class="tv">2 FT (600 mm)</span></div>
+        <div class="t-row"><span class="tk">Height</span><span class="tv">6 FT (1800 mm)</span></div>
+        <div class="t-row"><span class="tk">Depth</span><span class="tv">6 IN (150 mm)</span></div>
+        <div class="t-row"><span class="tk">Editions</span><span class="tv">Core · Artisan</span></div>
+      </div>
+    </div>
+    <!-- ▶ IMAGE: assets/system-corner-trap-installed.jpg -->
+    <div class="corner-img-zone img-zone">
+      <img src="assets/system-corner-trap-installed.jpg" alt="Corner bass trap installed full height" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>assets/system-corner-trap-installed.jpg</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signature Suite -->
+  <div class="suite-wrap rw">
+    <div class="tag tag-light">07 — Complete Environment</div>
+    <div class="suite-title">The Signature <em>Suite</em></div>
+    <p class="suite-sub">A fully integrated acoustic ecosystem designed for professional environments. Every surface treated. Every frequency controlled.</p>
+
+    <!-- ▶ IMAGE: assets/suite-full-studio-wideshot.jpg -->
+    <div class="suite-hero img-zone">
+      <img src="assets/suite-full-studio-wideshot.jpg" alt="Full studio with all three systems installed" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>assets/suite-full-studio-wideshot.jpg</span>
+      </div>
+    </div>
+
+    <div class="suite-comps">
+      <div class="suite-comp">
+        <div class="ct">I — The Perimeter</div>
+        <h4>Wall <em>Panels</em></h4>
+        <div class="sc-div"></div>
+        <div class="sc-r"><span class="sck">Quantity</span><span class="scv">10 × Panels</span></div>
+        <div class="sc-r"><span class="sck">Standard</span><span class="scv">2' × 4'</span></div>
+        <div class="sc-r"><span class="sck">Maximum</span><span class="scv">4' × 6'</span></div>
+      </div>
+      <div class="suite-comp">
+        <div class="ct">II — The Foundation</div>
+        <h4>Corner <em>Traps</em></h4>
+        <div class="sc-div"></div>
+        <div class="sc-r"><span class="sck">Quantity</span><span class="scv">2 × Units</span></div>
+        <div class="sc-r"><span class="sck">Size</span><span class="scv">2' × 6'</span></div>
+        <div class="sc-r"><span class="sck">Depth</span><span class="scv">6" High-Mass</span></div>
+      </div>
+      <div class="suite-comp">
+        <div class="ct">III — The Zenith</div>
+        <h4>Cloud <em>Systems</em></h4>
+        <div class="sc-div"></div>
+        <div class="sc-r"><span class="sck">Quantity</span><span class="scv">3 × Units</span></div>
+        <div class="sc-r"><span class="sck">Size</span><span class="scv">2' × 4'</span></div>
+        <div class="sc-r"><span class="sck">LED</span><span class="scv">Integrated</span></div>
+        <div class="sc-r"><span class="sck">Air-Gap</span><span class="scv">Dual-absorption</span></div>
+      </div>
+    </div>
+
+    <div class="suite-result">
+      <h4>Total Control.<br>Absolute Clarity.</h4>
+      <p>All components tailored to your exact room dimensions and architectural requirements. A world-class acoustic environment.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     9 · BESPOKE
+════════════════════════════════════ -->
+<section id="bespoke" aria-label="Bespoke Studio">
+
+  <div class="bespoke-left rw">
+    <div class="tag">08 — Bespoke Studio</div>
+    <h2 class="s-h2">Architectural <em>Customization</em></h2>
+    <p>Every acoustic environment is unique. Our workshop specializes in translating architectural concepts into precision acoustic solutions — from non-standard layouts to complex spatial designs.</p>
+    <p>All custom panels maintain high-density mineral cores, consistent acoustic performance, and premium finishing options.</p>
+
+    <div class="dim-grid">
+      <div class="dim-cell"><div class="dk">Minimum Size</div><div class="dv">1 FT × 1 FT</div></div>
+      <div class="dim-cell"><div class="dk">Maximum Panel</div><div class="dv">4 FT × 6 FT</div></div>
+      <div class="dim-cell"><div class="dk">Depths</div><div class="dv">2" · 3" · 4" · 5" · 6"</div></div>
+      <div class="dim-cell"><div class="dk">Finishing</div><div class="dv">Pine + Dual-Tone</div></div>
+    </div>
+
+    <div class="bespoke-feats">
+      <div class="bfeat">
+        <div class="bfeat-n">I</div>
+        <div>
+          <h4>Dimensional Freedom</h4>
+          <p>Panels crafted from 1'×1' to 4'×6', accommodating any room constraint or architectural vision.</p>
+        </div>
+      </div>
+      <div class="bfeat">
+        <div class="bfeat-n">II</div>
+        <div>
+          <h4>Geometric Integration</h4>
+          <p>Custom-built for angled walls, curved ceilings, and complex spatial designs.</p>
+        </div>
+      </div>
+      <div class="bfeat">
+        <div class="bfeat-n">III</div>
+        <div>
+          <h4>Performance Calibration</h4>
+          <p>Every custom panel maintains the same high-density mineral core. No compromise.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn-fill" style="background:var(--deep);color:var(--cream);align-self:flex-start">
+      Start a Bespoke Project
+    </a>
+  </div>
+
+  <div class="bespoke-right rw rw-d2">
+    <!-- ▶ IMAGE: assets/bespoke-custom-install-main.jpg -->
+    <div class="bespoke-main img-zone">
+      <img src="assets/bespoke-custom-install-main.jpg" alt="Bespoke custom acoustic installation" loading="lazy">
+      <div class="ph" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>assets/bespoke-custom-install-main.jpg</span>
+      </div>
+    </div>
+    <div class="bespoke-row">
+      <!-- ▶ IMAGE: assets/bespoke-detail-fabric.jpg -->
+      <div class="bespoke-sm img-zone">
+        <img src="assets/bespoke-detail-fabric.jpg" alt="Bespoke panel fabric detail" loading="lazy">
+        <div class="ph" aria-hidden="true"><span>assets/bespoke-detail-fabric.jpg</span></div>
+      </div>
+      <!-- ▶ IMAGE: assets/bespoke-detail-craftsmanship.jpg -->
+      <div class="bespoke-sm img-zone">
+        <img src="assets/bespoke-detail-craftsmanship.jpg" alt="Bespoke panel craftsmanship detail" loading="lazy">
+        <div class="ph" aria-hidden="true"><span>assets/bespoke-detail-craftsmanship.jpg</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     10 · CONTACT
+════════════════════════════════════ -->
+<section id="contact" aria-label="Get in Touch">
+
+  <div class="contact-left rw">
+    <div class="tag">09 — Get in Touch</div>
+    <h2 class="s-h2">Shape Your <em>Sound.</em></h2>
+    <p>Rooted in Chennai. Crafting acoustic environments for studios, cinemas, and spaces that demand the highest standard of sound design.</p>
+
+    <div class="channels">
+
+      <a class="channel" href="https://wa.me/918778459236" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <div class="ch-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.77-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div><div class="ch-k">WhatsApp Business</div><div class="ch-v">+91 87784 59236</div></div>
+      </a>
+
+      <a class="channel" href="https://instagram.com/carve_and_curve" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+        <div class="ch-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div><div class="ch-k">Instagram</div><div class="ch-v">@CARVE_AND_CURVE</div></div>
+      </a>
+
+      <div class="channel" aria-label="Location">
+        <div class="ch-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div><div class="ch-k">Location</div><div class="ch-v">Chennai, Tamil Nadu, India</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-form-wrap rw rw-d2">
+    <h3>Request a <em>Quote</em></h3>
+    <p>Tell us about your space and we'll respond within 24 hours.</p>
+    <form id="cForm" novalidate>
+      <div class="form-row">
+        <div class="fg">
+          <label for="f-name">Your Name</label>
+          <input type="text" id="f-name" name="name" placeholder="First Last" autocomplete="name">
+        </div>
+        <div class="fg">
+          <label for="f-phone">Phone / WhatsApp</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+        </div>
+      </div>
+      <div class="fg">
+        <label for="f-space">Space Type</label>
+        <select id="f-space" name="space">
+          <option value="">Select space type…</option>
+          <option>Recording / Music Studio</option>
+          <option>Home Theater / Cinema</option>
+          <option>Podcast / Broadcast Studio</option>
+          <option>Corporate / Office</option>
+          <option>Residential / Bedroom</option>
+          <option>Commercial / Hospitality</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label for="f-msg">Tell us about your project</label>
+        <textarea id="f-msg" name="message" placeholder="Room dimensions, edition preference, special requirements…"></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="sbtn">Send Enquiry</button>
+    </form>
+  </div>
+
+</section>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div>
+    <div class="footer-logo">Carve <em>&amp; Curve</em></div>
+    <div class="footer-mid" style="margin-top:6px">Handcrafted Acoustic Excellence · Est. in Craftsmanship</div>
+  </div>
+  <div class="footer-mid">Chennai · Tamil Nadu · India</div>
+  <div class="footer-links">
+    <a href="https://wa.me/918778459236" target="_blank" rel="noopener">+91 87784 59236</a>
+    <a href="https://instagram.com/carve_and_curve" target="_blank" rel="noopener">@CARVE_AND_CURVE</a>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
