@@ -179,7 +179,7 @@ button { cursor:none; }
 /* ══════════════════════════════════════
    1 · HERO
 ══════════════════════════════════════ */
-#hero { min-height:100vh; display:grid; grid-template-columns:52% 48%; position:relative; overflow:hidden; background:var(--deep); }
+#hero { min-height:100vh; display:grid; grid-template-columns:40% 60%; position:relative; overflow:hidden; background:var(--deep); }
 
 .hero-left { display:flex; flex-direction:column; justify-content:center; padding:140px 60px 80px; position:relative; z-index:3; }
 .hero-arc { position:absolute; bottom:-60px; left:-60px; width:280px; height:280px; border-radius:50%; border:1px solid rgba(201,168,76,.07); pointer-events:none; }
