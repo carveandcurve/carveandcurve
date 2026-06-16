@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main homepage — highest priority -->
+  <url>
+    <loc>https://carveandcurve.in/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://carveandcurve.in/"/>
+
+    <!-- Hero image -->
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/cover-hero.jpg</image:loc>
+      <image:title>Carve and Curve — Premium Acoustic Panels Chennai</image:title>
+      <image:caption>Handcrafted acoustic panels for studios and home theatres, Chennai India</image:caption>
+    </image:image>
+
+    <!-- Product images -->
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/edition-core-product.jpg</image:loc>
+      <image:title>Core Edition Acoustic Panel — Frameless Single-Tone</image:title>
+      <image:caption>Core Edition acoustic panel by Carve and Curve, Chennai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/edition-artisan-product.jpg</image:loc>
+      <image:title>Artisan Edition Acoustic Panel — Pinewood Frame Single-Tone</image:title>
+      <image:caption>Artisan Edition with solid Pinewood frame by Carve and Curve</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/edition-signature-product.jpg</image:loc>
+      <image:title>Signature Edition Acoustic Panel — Pinewood Frame Dual-Tone</image:title>
+      <image:caption>Signature Edition flagship acoustic panel with dual-tone fabric, Chennai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/system-wall-panel-installed.jpg</image:loc>
+      <image:title>Wall Acoustic Panel Installation — Recording Studio Chennai</image:title>
+      <image:caption>Carve and Curve wall acoustic panels installed in professional studio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/system-cloud-panel-ceiling.jpg</image:loc>
+      <image:title>Ceiling Cloud Acoustic Panel with LED — Chennai</image:title>
+      <image:caption>Cloud ceiling acoustic system with integrated LED by Carve and Curve</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/system-corner-trap-installed.jpg</image:loc>
+      <image:title>Corner Bass Trap Installation — Floor to Ceiling</image:title>
+      <image:caption>High-mass corner bass trap by Carve and Curve for low frequency control</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/bespoke-custom-install-main.jpg</image:loc>
+      <image:title>Bespoke Custom Acoustic Panel Installation — Chennai</image:title>
+      <image:caption>Custom bespoke acoustic panel installation by Carve and Curve</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://carveandcurve.in/assets/suite-full-studio-wideshot.jpg</image:loc>
+      <image:title>Complete Signature Suite — Professional Studio Acoustic Treatment</image:title>
+      <image:caption>Full studio with Carve and Curve Signature Suite — wall panels, corner traps and cloud systems</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
