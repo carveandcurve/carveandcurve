@@ -372,7 +372,7 @@
       }
 
       var waText = lines.join('\n');
-      var waURL  = 'https://wa.me/918778459236?text=' + encodeURIComponent(waText);
+      var waURL  = 'https://wa.me/919944024230?text=' + encodeURIComponent(waText);
 
       /* ── Open WhatsApp directly — no email, no redirect ── */
       window.open(waURL, '_blank');
@@ -690,7 +690,7 @@
           'Estimated: ' + panels + ' wall panels, ' + trapsLabel + ' corner bass traps',
           'Suggested edition: ' + type.edition
         ].join('\n');
-        waBtn.href = 'https://wa.me/918778459236?text=' + encodeURIComponent(msg);
+        waBtn.href = 'https://wa.me/919944024230?text=' + encodeURIComponent(msg);
       }
     }
 
