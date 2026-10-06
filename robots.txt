@@ -1,0 +1,14 @@
+# robots.txt — Carve & Curve
+# https://carveandcurve.in
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://carveandcurve.in/sitemap.xml
+
+# Block admin or utility paths if any are added later
+Disallow: /cdn-cgi/
+Disallow: /.git/
+Disallow: /node_modules/
