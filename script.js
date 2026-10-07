@@ -357,8 +357,8 @@
      No page reload, no email tab, no redirects.
      Opens wa.me link in new tab/window with pre-filled message.
   ════════════════════════════════════════════════════════ */
-  var SB_URL = 'https://YOUR-PROJECT-REF.supabase.co';   /* same Project URL as the Business Suite */
-  var SB_KEY = 'YOUR-ANON-PUBLIC-KEY';                   /* anon public key only */
+  var SB_URL = 'https://jajeqworcvywggaiwkqk.supabase.co';   /* same Project URL as the Business Suite */
+  var SB_KEY = 'sb_publishable_X6ZJq03iuzAOQM3KA-I5-g_9zzqCJBM';                   /* anon public key only */
   var WA_FALLBACK = 'https://wa.me/919944024230';
   var form     = document.getElementById('cForm');
   var sbtn     = document.getElementById('sbtn');
